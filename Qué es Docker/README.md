@@ -28,7 +28,7 @@
 Es un paquete de datos que contiene todo lo necesario para que el servicio funcione.
 
 Un paquete se divide en capas y no hay un límite de capas.
-
+```
 ╔═══════════════════════════════════════════════════════════════════════════════════╗
 ║                                Docker HOST( MI PC)                                ║
 ╠═══════════════════════════════════════════════════════════════════════════════════╣
@@ -50,3 +50,4 @@ Un paquete se divide en capas y no hay un límite de capas.
 ║           ╚═════════════════════════════════════════════════════════╝             ║
 ║                                                                                   ║
 ╚═══════════════════════════════════════════════════════════════════════════════════╝
+```
