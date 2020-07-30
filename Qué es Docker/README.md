@@ -30,7 +30,7 @@ Es un paquete de datos que contiene todo lo necesario para que el servicio funci
 Un paquete se divide en capas y no hay un límite de capas.
 ```
 ╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                                Docker HOST( MI PC)                                ║
+║                                Imagen Docker                                      ║
 ╠═══════════════════════════════════════════════════════════════════════════════════╣
 ║                                                                                   ║
 ║           ╔═════════════════════════════════════════════════════════╗             ║
@@ -56,4 +56,30 @@ ESTAS TRES PRIMERAS CAPAS SON RO( Read-Only)
 
 ## Qúe es un Contenedor
 
-
+Un contenedor es una capa adicional, que se encarga de la ejecución de lo que está definido
+en una imagen, los contenedores no son persistentes, es decir, pueden desaparecer y la información
+que poseen con ellos, por eso no es buena idea cambiar configuración en el contenedor.
+```
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                 Contenedor Docker                                 ║
+╠═══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                   ║
+║           ╔═════════════════════════════════════════════════════════╗             ║
+║           ║                         Imagen                          ║             ║
+║           ╚═════════════════════════════════════════════════════════╝             ║
+║                                        ║                                          ║
+║                                        ║                                          ║
+║                                        ║                                          ║
+║           ╔═════════════════════════════════════════════════════════╗             ║
+║           ║                        Volúmenes                        ║             ║
+║           ╚═════════════════════════════════════════════════════════╝             ║
+║                                        ║ Los volúmenes son usados para            ║
+║                                        ║ persistencia de datos aunque             ║
+║                                        ║ el contenedor se elimine.                ║
+║           ╔═════════════════════════════════════════════════════════╗             ║
+║           ║                          Redes                          ║             ║
+║           ╚═════════════════════════════════════════════════════════╝             ║
+║                                                                                   ║
+╚═══════════════════════════════════════════════════════════════════════════════════╝
+SOBRE UN CONTENEDOR SE PUEDE ESCRIBIR LIBREMENTE
+```
