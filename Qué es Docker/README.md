@@ -25,3 +25,28 @@
 
 # Qúe es una imagen Docker
 
+Es un paquete de datos que contiene todo lo necesario para que el servicio funcione.
+
+Un paquete se divide en capas y no hay un límite de capas.
+
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                Docker HOST( MI PC)                                ║
+╠═══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                   ║
+║           ╔═════════════════════════════════════════════════════════╗             ║
+║           ║           CAPA 3(CMD) - Comandos de inicio del proceso  ║             ║
+║           ╚═════════════════════════════════════════════════════════╝             ║
+║                                        ║ Es muy importante que el proceso que     ║
+║                                        ║ se inicie en la CAPA 3 ocupe la consola, ║
+║                                        ║ esté en primer plano si la imagen morirá ║
+║           ╔═════════════════════════════════════════════════════════╗             ║
+║           ║         CAPA 2(RUN) - Comandos de instalación           ║             ║
+║           ╚═════════════════════════════════════════════════════════╝             ║
+║                                        ║                                          ║
+║                                        ║                                          ║
+║                                        ║                                          ║
+║           ╔═════════════════════════════════════════════════════════╗             ║
+║           ║           CAPA 1(FROM) - Sistema Operativo              ║             ║
+║           ╚═════════════════════════════════════════════════════════╝             ║
+║                                                                                   ║
+╚═══════════════════════════════════════════════════════════════════════════════════╝
