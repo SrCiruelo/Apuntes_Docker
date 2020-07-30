@@ -23,7 +23,7 @@
 ╚═══════════════════════════════════════════════════════════════════════════════════╝
 ```
 
-# Qúe es una imagen Docker
+## Qúe es una imagen Docker
 
 Es un paquete de datos que contiene todo lo necesario para que el servicio funcione.
 
@@ -50,4 +50,8 @@ Un paquete se divide en capas y no hay un límite de capas.
 ║           ╚═════════════════════════════════════════════════════════╝             ║
 ║                                                                                   ║
 ╚═══════════════════════════════════════════════════════════════════════════════════╝
+ESTAS TRES PRIMERAS CAPAS SON RO( Read-Only) 
 ```
+
+
+## Qúe es un Contenedor
